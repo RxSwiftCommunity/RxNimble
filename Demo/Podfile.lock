@@ -1,0 +1,24 @@
+PODS:
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
+  - RxNimble (0.1.0):
+    - Nimble (~> 3.0.0)
+    - RxSwift (~> 2.0.0)
+  - RxSwift (2.0.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - RxNimble (from `../`)
+
+EXTERNAL SOURCES:
+  RxNimble:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  RxNimble: c7349b8c8465625b5851e0d6d4f318c8fccfc940
+  RxSwift: d83246efa6f16c50c143bec134649d045498f601
+
+COCOAPODS: 0.39.0

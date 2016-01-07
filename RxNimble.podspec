@@ -15,4 +15,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ashfurrow/RxNimble.git", :tag => s.version }
   s.source_files  = "Source/**/*.swift"
   s.dependency "Nimble", "~> 3.0.0"
+  s.dependency "RxSwift", "~> 2.0.0"
 end
