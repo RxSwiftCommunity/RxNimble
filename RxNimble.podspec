@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
   s.source_files  = "Source/**/*.swift"
   s.dependency "Nimble", "~> 3.0.0"
   s.dependency "RxSwift", "~> 2.0.0"
+  s.dependency "RxBlocking", "~> 2.0.0"
 end

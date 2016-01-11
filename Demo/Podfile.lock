@@ -1,8 +1,11 @@
 PODS:
   - Nimble (3.0.0)
   - Quick (0.8.0)
+  - RxBlocking (2.0.0):
+    - RxSwift (~> 2.0)
   - RxNimble (0.1.0):
     - Nimble (~> 3.0.0)
+    - RxBlocking (~> 2.0.0)
     - RxSwift (~> 2.0.0)
   - RxSwift (2.0.0)
 
@@ -18,7 +21,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
-  RxNimble: c7349b8c8465625b5851e0d6d4f318c8fccfc940
+  RxBlocking: a95a10ed54eb5d116f6c9a87047ff671e181d07b
+  RxNimble: 9d5c25be85c1cb82dfcad28298e38b6160143915
   RxSwift: d83246efa6f16c50c143bec134649d045498f601
 
 COCOAPODS: 0.39.0
