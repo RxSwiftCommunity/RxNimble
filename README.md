@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/RxSwiftCommunity/RxNimble.svg?branch=master)](https://travis-ci.org/RxSwiftCommunity/RxNimble)
+
 # RxNimble
 
 Nimble extensions that making unit testing with RxSwift easier :tada:
