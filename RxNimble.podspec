@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
   s.dependency "Nimble", "~> 3.0"
   s.dependency "RxSwift", "~> 2.0"
   s.dependency "RxBlocking", "~> 2.0"
+  
+  s.pod_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
 end
