@@ -22,7 +22,7 @@ SPEC CHECKSUMS:
   Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
   RxBlocking: 1226c1fa0ca1e0ca5f964d4330ca3649f2128680
-  RxNimble: 6bb86c63bbff1d662535b01e53a36868c924b0c3
+  RxNimble: 6fdc2efe09b9a305b152abd1a1d24a55bd370854
   RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
 
 COCOAPODS: 0.39.0

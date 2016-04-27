@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.dependency "RxSwift", "~> 2.0"
   s.dependency "RxBlocking", "~> 2.0"
   
-  s.pod_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
 end
