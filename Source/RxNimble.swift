@@ -8,7 +8,8 @@ public func equalFirst<T: Equatable, O: ObservableType where O.E == T>(expectedV
 
         failureMessage.postfixMessage = "equal <\(expectedValue)>"
         let actualValue = try actualExpression.evaluate()?.toBlocking().first()
-
+        failureMessage.actualValue = "<\(actualValue)>"
+        
         let matches = actualValue == expectedValue
         return matches
     }
@@ -19,6 +20,7 @@ public func equalFirst<T: Equatable>(expectedValue: T?) -> MatcherFunc<Variable<
 
         failureMessage.postfixMessage = "equal <\(expectedValue)>"
         let actualValue = try actualExpression.evaluate()?.value
+        failureMessage.actualValue = "<\(actualValue)>"
 
         let matches = actualValue == expectedValue && expectedValue != nil
         return matches
@@ -30,7 +32,8 @@ public func equalFirst<T: Equatable, O: ObservableType where O.E == T?>(expected
 
         failureMessage.postfixMessage = "equal <\(expectedValue)>"
         let actualValue = try actualExpression.evaluate()?.toBlocking().first()
-
+        failureMessage.actualValue = "<\(actualValue)>"
+        
         switch actualValue {
         case .None:
             return expectedValue == nil
@@ -45,7 +48,8 @@ public func equalFirst<T: Equatable>(expectedValue: T?) -> MatcherFunc<Variable<
 
         failureMessage.postfixMessage = "equal <\(expectedValue)>"
         let actualValue = try actualExpression.evaluate()?.value
-
+        failureMessage.actualValue = "<\(actualValue)>"
+        
         switch actualValue {
         case .None:
             return expectedValue == nil
