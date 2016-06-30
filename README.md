@@ -11,7 +11,7 @@ RxSwift includes a really nifty little library called [RxBlocking](http://cocoap
 But writing code to check an `Observable`'s value is sooooo tedious:
 
 ```swift
-let result = try! observabe.toBlocking().first()
+let result = try! observable.toBlocking().first()
 expect(result) == 42
 ```
 
