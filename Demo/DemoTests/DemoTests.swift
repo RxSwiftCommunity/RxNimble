@@ -23,7 +23,7 @@ class RxNimbleTest: QuickSpec {
 
         it("works with variables") {
             let subject = Variable("Hi")
-
+            
             expect(subject) == "Hi"
         }
     }

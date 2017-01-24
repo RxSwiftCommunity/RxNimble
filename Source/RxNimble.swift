@@ -32,9 +32,9 @@ public func equalFirst<T: Equatable, O: ObservableType where O.E == T?>(expected
         let actualValue = try actualExpression.evaluate()?.toBlocking().first()
 
         switch actualValue {
-        case .None:
+        case .none:
             return expectedValue == nil
-        case .Some(let wrapped):
+        case .some(let wrapped):
             return wrapped == expectedValue
         }
     }
@@ -47,9 +47,9 @@ public func equalFirst<T: Equatable>(expectedValue: T?) -> MatcherFunc<Variable<
         let actualValue = try actualExpression.evaluate()?.value
 
         switch actualValue {
-        case .None:
+        case .none:
             return expectedValue == nil
-        case .Some(let wrapped):
+        case .some(let wrapped):
             return wrapped == expectedValue
         }
     }
@@ -57,17 +57,17 @@ public func equalFirst<T: Equatable>(expectedValue: T?) -> MatcherFunc<Variable<
 
 // Applies to Observables of T, which must conform to Equatable.
 public func ==<T: Equatable, O: ObservableType where O.E == T>(lhs: Expectation<O>, rhs: T?) {
-    lhs.to( equalFirst(rhs) )
+    lhs.to(equalFirst(expectedValue: rhs))
 }
 
 public func ==<T: Equatable>(lhs: Expectation<Variable<T>>, rhs: T?) {
-    lhs.to( equalFirst(rhs) )
+    lhs.to(equalFirst(expectedValue: rhs))
 }
 
 public func ==<T: Equatable, O: ObservableType where O.E == Optional<T>>(lhs: Expectation<O>, rhs: T?) {
-    lhs.to( equalFirst(rhs) )
+    lhs.to(equalFirst(expectedValue: rhs))
 }
 
 public func ==<T: Equatable>(lhs: Expectation<Variable<T?>>, rhs: T?) {
-    lhs.to( equalFirst(rhs) )
+    lhs.to(equalFirst(expectedValue: rhs))
 }
