@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxNimble"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Nimble extensions that making unit testing with RxSwift easier 🎉"
   s.description  = <<-DESC
     This library includes functions that make testing RxSwift projects easier with Nimble.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/ashfurrow/RxNimble.git", :tag => s.version }
   s.source_files  = "Source/**/*.swift"
-  s.dependency "Nimble", "~> 5.1"
+  s.dependency "Nimble", "~> 6.1"
   s.dependency "RxSwift", "~> 3.0"
   s.dependency "RxBlocking", "~> 3.0"
   
