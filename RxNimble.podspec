@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/ashfurrow/RxNimble.git", :tag => s.version }
   s.source_files  = "Source/**/*.swift"
-  s.dependency "Nimble", "~> 6.1"
+  s.dependency "Nimble", "~> 6.0"
   s.dependency "RxSwift", "~> 3.0"
   s.dependency "RxBlocking", "~> 3.0"
   
