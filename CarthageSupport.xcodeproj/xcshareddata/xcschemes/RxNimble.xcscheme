@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "OBJ_14"
-               BuildableName = "RxNimble.framework"
+               BuildableName = ".framework"
                BlueprintName = "RxNimble"
                ReferencedContainer = "container:CarthageSupport.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "OBJ_14"
-            BuildableName = "RxNimble.framework"
+            BuildableName = ".framework"
             BlueprintName = "RxNimble"
             ReferencedContainer = "container:CarthageSupport.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "OBJ_14"
-            BuildableName = "RxNimble.framework"
+            BuildableName = ".framework"
             BlueprintName = "RxNimble"
             ReferencedContainer = "container:CarthageSupport.xcodeproj">
          </BuildableReference>
