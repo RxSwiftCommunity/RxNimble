@@ -15,8 +15,9 @@
 		F2FF7BF61E9F26C8007458BB /* Base-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Base-Release.xcconfig"; sourceTree = "<group>"; };
 		F2FF7BF71E9F26C8007458BB /* RxNimble-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "RxNimble-Debug.xcconfig"; sourceTree = "<group>"; };
 		F2FF7BF81E9F26C8007458BB /* RxNimble-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "RxNimble-Release.xcconfig"; sourceTree = "<group>"; };
+		F2FF7BF91E9F2BB4007458BB /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		OBJ_11 /* Demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Demo; sourceTree = SOURCE_ROOT; };
-		OBJ_13 /* .framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = .framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_13 /* .framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = .framework; path = RxNimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* RxNimble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNimble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +36,7 @@
 		F2FF7BF41E9F26C8007458BB /* configs */ = {
 			isa = PBXGroup;
 			children = (
+				F2FF7BF91E9F2BB4007458BB /* Base.xcconfig */,
 				F2FF7BF51E9F26C8007458BB /* Base-Debug.xcconfig */,
 				F2FF7BF61E9F26C8007458BB /* Base-Release.xcconfig */,
 				F2FF7BF71E9F26C8007458BB /* RxNimble-Debug.xcconfig */,
@@ -58,7 +60,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				F2FF7BF41E9F26C8007458BB /* configs */,
@@ -68,7 +70,6 @@
 				OBJ_11 /* Demo */,
 				OBJ_12 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -122,7 +123,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

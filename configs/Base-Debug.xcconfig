@@ -1,9 +1,9 @@
 // Generated using xcconfig-extractor by Toshihiro Suzuki - https://github.com/toshi0383/xcconfig-extractor
+#include "Base.xcconfig"
 ONLY_ACTIVE_ARCH = YES
 DEBUG_INFORMATION_FORMAT = dwarf
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE
 USE_HEADERMAP = NO
-MACOSX_DEPLOYMENT_TARGET = 10.10
 GCC_OPTIMIZATION_LEVEL = 0
 SWIFT_OPTIMIZATION_LEVEL = -Onone
 ENABLE_NS_ASSERTIONS = YES
