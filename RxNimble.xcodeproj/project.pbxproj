@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      OBJ_1 = {
+         isa = "PBXProject";
+         attributes = {
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = OBJ_2;
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "English";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en",
+         );
+         mainGroup = OBJ_5;
+         productRefGroup = OBJ_12;
+         projectDirPath = ".";
+         targets = (
+            OBJ_14,
+         );
+      };
+      OBJ_10 = {
+         isa = "PBXGroup";
+         children = (
+         );
+         path = "Tests";
+         sourceTree = "<group>";
+      };
+      OBJ_11 = {
+         isa = "PBXFileReference";
+         path = "Demo";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_12 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_13,
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_13 = {
+         isa = "PBXFileReference";
+         path = "RxNimble.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_14 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_15;
+         buildPhases = (
+            OBJ_18,
+            OBJ_20,
+         );
+         dependencies = (
+         );
+         name = "RxNimble";
+         productName = "RxNimble";
+         productReference = OBJ_13;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_15 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_16,
+            OBJ_17,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_16 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "RxNimble.xcodeproj/RxNimble_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "RxNimble";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            TARGET_NAME = "RxNimble";
+         };
+         name = "Debug";
+      };
+      OBJ_17 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "RxNimble.xcodeproj/RxNimble_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "RxNimble";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            TARGET_NAME = "RxNimble";
+         };
+         name = "Release";
+      };
+      OBJ_18 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_19,
+         );
+      };
+      OBJ_19 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_9;
+      };
+      OBJ_2 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_3,
+            OBJ_4,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_20 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      OBJ_3 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            SWIFT_VERSION = "3.0";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      OBJ_4 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-O";
+            SWIFT_VERSION = "3.0";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      OBJ_5 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_6,
+            OBJ_7,
+            OBJ_10,
+            OBJ_11,
+            OBJ_12,
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      OBJ_6 = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_7 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_8,
+         );
+         path = "Sources";
+         sourceTree = "<group>";
+      };
+      OBJ_8 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_9,
+         );
+         name = "RxNimble";
+         path = "Sources";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_9 = {
+         isa = "PBXFileReference";
+         path = "RxNimble.swift";
+         sourceTree = "<group>";
+      };
+   };
+   rootObject = OBJ_1;
+}
