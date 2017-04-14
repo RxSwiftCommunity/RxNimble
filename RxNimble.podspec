@@ -10,13 +10,13 @@ Pod::Spec.new do |s|
   s.author             = { "Ash Furrow" => "ash@ashfurrow.com" }
   s.social_media_url   = "http://twitter.com/ashfurrow"
   s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.9"
+  s.osx.deployment_target = "10.10"
   s.tvos.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/ashfurrow/RxNimble.git", :tag => s.version }
   s.source_files  = "Sources/**/*.swift"
-  s.dependency "Nimble", "~> 5.1.1"
-  s.dependency "RxSwift", "~> 3.0.1"
-  s.dependency "RxBlocking", "~> 3.0.1"
+  s.dependency "Nimble", "~> 5.1"
+  s.dependency "RxSwift", "~> 3.0"
+  s.dependency "RxBlocking", "~> 3.0"
   
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
 end
