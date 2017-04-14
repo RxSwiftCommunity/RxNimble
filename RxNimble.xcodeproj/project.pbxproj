@@ -150,7 +150,7 @@
 			attributes = {
 				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "CarthageSupport" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "RxNimble" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -219,7 +219,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_2 /* Build configuration list for PBXProject "CarthageSupport" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "RxNimble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
