@@ -1,0 +1,12 @@
+// Generated using xcconfig-extractor by Toshihiro Suzuki - https://github.com/toshi0383/xcconfig-extractor
+HEADER_SEARCH_PATHS = $(inherited)
+OTHER_SWIFT_FLAGS = $(inherited)
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks
+LD_RUNPATH_SEARCH_PATHS = $(TOOLCHAIN_DIR)/usr/lib/swift/macosx
+INFOPLIST_FILE = $(SRCROOT)/RxNimble_Info.plist
+OTHER_LDFLAGS = $(inherited)
+PRODUCT_BUNDLE_IDENTIFIER = RxNimble
+ENABLE_TESTABILITY = YES
+PRODUCT_MODULE_NAME = $(TARGET_NAME:c99extidentifier)
+PRODUCT_NAME = $(TARGET_NAME:c99extidentifier)
+TARGET_NAME = RxNimble
