@@ -9,22 +9,21 @@ class RxNimbleTest: QuickSpec {
         it("works with plain observables") {
             let subject = ReplaySubject<String>.createUnbounded()
             subject.onNext("Hi")
-
-            expect(subject.asObservable()) == "Hi"
+            expect(subject).first == "Hi"
         }
 
         it("only checks the first value") {
             let subject = ReplaySubject<String>.createUnbounded()
             subject.onNext("Hi")
             subject.onNext("Hello")
-
-            expect(subject.asObservable()) == "Hi"
+            expect(subject).first == "Hi"
         }
 
-        it("works with variables") {
-            let subject = Variable("Hi")
-            
-            expect(subject) == "Hi"
+        it("can use different matchers") {
+            let subject = ReplaySubject<String>.createUnbounded()
+            subject.onNext("")
+
+            expect(subject).first.to(beEmpty())
         }
     }
 }
