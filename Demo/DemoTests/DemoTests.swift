@@ -26,5 +26,12 @@ class RxNimbleTest: QuickSpec {
             
             expect(subject) == "Hi"
         }
+
+        it("can use different matchers") {
+            let subject = ReplaySubject<String>.createUnbounded()
+            subject.onNext("")
+
+            expect(subject).first.to(beEmpty())
+        }
     }
 }
