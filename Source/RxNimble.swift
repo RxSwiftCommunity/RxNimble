@@ -3,55 +3,58 @@ import RxBlocking
 import Nimble
 
 // This is handy so we can write expect(o) == 1 instead of expect(o.value) == 1 or whatever.
-public func equalFirst<T: Equatable, O: ObservableType>(_ expectedValue: T?) -> MatcherFunc<O> where O.E == T {
-    return MatcherFunc { actualExpression, failureMessage in
-
-        failureMessage.postfixMessage = "equal <\(String(describing: expectedValue))>"
+public func equalFirst<T: Equatable, O: ObservableType>(_ expectedValue: T?) -> Predicate<O> where O.E == T {
+    return Predicate.define { actualExpression in
         let actualValue = try actualExpression.evaluate()?.toBlocking().first()
 
-        let matches = actualValue == expectedValue
-        return matches
+        let matches = (actualValue == expectedValue)
+        return PredicateResult(bool: matches,
+                               message: .expectedTo("equal <\(String(describing: expectedValue))>"))
     }
 }
 
-public func equalFirst<T: Equatable>(_ expectedValue: T?) -> MatcherFunc<Variable<T>> {
-    return MatcherFunc { actualExpression, failureMessage in
-
-        failureMessage.postfixMessage = "equal <\(String(describing: expectedValue))>"
+public func equalFirst<T: Equatable>(_ expectedValue: T?) -> Predicate<Variable<T>> {
+    return Predicate.define { actualExpression in
         let actualValue = try actualExpression.evaluate()?.value
 
-        let matches = actualValue == expectedValue && expectedValue != nil
-        return matches
+        let matches = (actualValue == expectedValue) && (expectedValue != nil)
+        return PredicateResult(bool: matches,
+                               message: .expectedTo("equal <\(String(describing: expectedValue))>"))
     }
 }
 
-public func equalFirst<T: Equatable, O: ObservableType>(_ expectedValue: T?) -> MatcherFunc<O> where O.E == T? {
-    return MatcherFunc { actualExpression, failureMessage in
-
-        failureMessage.postfixMessage = "equal <\(String(describing: expectedValue))>"
+public func equalFirst<T: Equatable, O: ObservableType>(_ expectedValue: T?) -> Predicate<O> where O.E == T? {
+    return Predicate.define { actualExpression in
         let actualValue = try actualExpression.evaluate()?.toBlocking().first()
 
+        let matches: Bool
         switch actualValue {
         case .none:
-            return expectedValue == nil
+            matches = (expectedValue == nil)
         case .some(let wrapped):
-            return wrapped == expectedValue
+            matches = (wrapped == expectedValue)
         }
+
+        return PredicateResult(bool: matches,
+                               message: .expectedTo("equal <\(String(describing: expectedValue))>"))
     }
 }
 
-public func equalFirst<T: Equatable>(_ expectedValue: T?) -> MatcherFunc<Variable<T?>> {
-    return MatcherFunc { actualExpression, failureMessage in
+public func equalFirst<T: Equatable>(_ expectedValue: T?) -> Predicate<Variable<T?>> {
+    return Predicate.define { actualExpression in
 
-        failureMessage.postfixMessage = "equal <\(String(describing: expectedValue))>"
         let actualValue = try actualExpression.evaluate()?.value
 
+        let matches: Bool
         switch actualValue {
         case .none:
-            return expectedValue == nil
+            matches = (expectedValue == nil)
         case .some(let wrapped):
-            return wrapped == expectedValue
+            matches = (wrapped == expectedValue)
         }
+
+        return PredicateResult(bool: matches,
+                               message: .expectedTo("equal <\(String(describing: expectedValue))>"))
     }
 }
 
