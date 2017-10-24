@@ -1,13 +1,13 @@
 PODS:
-  - Nimble (7.0.0)
-  - Quick (1.0.0)
-  - RxBlocking (3.0.1):
-    - RxSwift (~> 3.0)
-  - RxNimble (2.0.0):
+  - Nimble (7.0.2)
+  - Quick (1.2.0)
+  - RxBlocking (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxNimble (3.0.0):
     - Nimble (~> 7.0)
-    - RxBlocking (~> 3.0)
-    - RxSwift (~> 3.0)
-  - RxSwift (3.0.1)
+    - RxBlocking (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
 
 DEPENDENCIES:
   - Nimble
@@ -19,12 +19,12 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Nimble: 874982b605d4d752fcac6be695d13c502de84b1b
-  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
-  RxBlocking: 5de082d09d1ab45b49173f309f1a97d6b50f34c4
-  RxNimble: 0a187f22441eca11779f17ffd6565f03a3f5b1fb
-  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  RxBlocking: 923c2c8106d80d7c2d6b276afd66ce3b10824836
+  RxNimble: 89a6dbed3832eebbcc0f16057cbfa38a58b99e58
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
 
 PODFILE CHECKSUM: 7405369509db0cbd242146add66181ab5ab0efb0
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
