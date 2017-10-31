@@ -4,9 +4,13 @@
 
 - Nothing yet.
 
+## 4.0.0
+
+- Support for Swift 4.0, RxSwift 4.0 and RxBlocking 4.0. See [#27](https://github.com/RxSwiftCommunity/RxNimble/pull/27).
+
 ## 3.0.0
 
-- Supprt for new Nimble 7 api. See [#21](https://github.com/RxSwiftCommunity/RxNimble/pull/21).
+- Support for new Nimble 7 api. See [#21](https://github.com/RxSwiftCommunity/RxNimble/pull/21).
 
 ## 1.0.0
 
