@@ -15,10 +15,10 @@ let result = try! observable.toBlocking().first()
 expect(result) == 42
 ```
 
-With `RxNimble`, we've added [Nimble](https://github.com/Quick/Nimble) matchers for `Observable`s, so the code above can be rewritten as:
+With `RxNimble`, we've added [Nimble](https://github.com/Quick/Nimble) extension for `Observable`s, so the code above can be rewritten as:
 
 ```swift
-expect(observable) == 42
+expect(observable).first == 42
 ```
 
 Nice.
