@@ -12,6 +12,8 @@ class RxNimbleTest: QuickSpec {
                 self.message = message
             }
         }
+
+        //MARK: First
         describe("First") {
             it("works with plain observables") {
                 let subject = ReplaySubject<String>.createUnbounded()
@@ -40,6 +42,31 @@ class RxNimbleTest: QuickSpec {
                 subject.onError(AnyError())
 
                 expect(subject).first.to(throwError())
+            }
+        }
+
+        //MARK: Last
+        describe("Last") {
+            it("checks for last element") {
+                let subject = ReplaySubject<String>.createUnbounded()
+                subject.onNext("Hello")
+                subject.onNext("World")
+                subject.onCompleted()
+
+                expect(subject).last == "World"
+            }
+            it("is nil, if sequence is empty") {
+                let subject = ReplaySubject<String>.createUnbounded()
+                subject.onCompleted()
+
+                expect(subject).last.to(beNil())
+            }
+            it("error, if terminated with error") {
+                let subject = ReplaySubject<Any>.createUnbounded()
+                subject.onNext("Hello, world!")
+                subject.onError(AnyError())
+
+                expect(subject).last.to(throwError())
             }
         }
     }
