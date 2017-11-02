@@ -69,5 +69,17 @@ class RxNimbleTest: QuickSpec {
                 expect(subject).last.to(throwError())
             }
         }
+
+        //MARK: Array
+        describe("Array") {
+            it("checks for timeline") {
+                let subject = ReplaySubject<String>.createUnbounded()
+                subject.onNext("Hello")
+                subject.onNext("World")
+                subject.onCompleted()
+
+                expect(subject).array == ["Hello", "World"]
+            }
+        }
     }
 }

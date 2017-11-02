@@ -32,4 +32,15 @@ public extension Expectation where T: ObservableType {
             try source?.toBlocking().last()
         }
     }
+
+    /**
+     Expectation with all sequence's elements
+
+     Transforms the expression by blocking sequence and returns its elements.
+     */
+    public var array: Expectation<[T.E]> {
+        return transform { source in
+            try source?.toBlocking().toArray()
+        }
+    }
 }
