@@ -4,6 +4,10 @@
 
 - Nothing yet.
 
+## 4.1.1
+
+- Swift 4.1 support. See [#30](https://github.com/RxSwiftCommunity/RxNimble/issues/30).
+
 ## 4.1.0
 
 - Deprecate old matcher functions
