@@ -4,6 +4,11 @@
 
 - Nothing yet.
 
+## 4.2.0
+
+- Updated RxSwift requirement. 
+- Swift 4.1 support again. See [#30](https://github.com/RxSwiftCommunity/RxNimble/pull/31).
+
 ## 4.1.1
 
 - Swift 4.1 support. See [#30](https://github.com/RxSwiftCommunity/RxNimble/issues/30).
