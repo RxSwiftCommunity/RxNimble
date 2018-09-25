@@ -1,13 +1,13 @@
 PODS:
-  - Nimble (7.3.0)
-  - Quick (1.3.1)
-  - RxBlocking (4.2.0):
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
+  - RxBlocking (4.3.1):
     - RxSwift (~> 4.0)
   - RxNimble (4.2.0):
     - Nimble (~> 7.0)
     - RxBlocking (~> 4.0)
     - RxSwift (~> 4.2)
-  - RxSwift (4.2.0)
+  - RxSwift (4.3.1)
 
 DEPENDENCIES:
   - Nimble
@@ -26,11 +26,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: c8d6a1f463701921c46de965c673e13cafa09196
-  Quick: d17304d58d0d169dd0bd1c6e5c28e3318de32a1a
-  RxBlocking: e339d8a6e752e25ade95ff858466c55436668f59
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  RxBlocking: 64c051285261ca2339481e91b5f70eb06b03660a
   RxNimble: cb8c3dd1ca79b83c60744f1c327130c1aef202a1
-  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
 
 PODFILE CHECKSUM: 7405369509db0cbd242146add66181ab5ab0efb0
 
