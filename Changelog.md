@@ -4,6 +4,11 @@
 
 - Nothing yet.
 
+## 4.3.0
+- Swift 4.2 support
+- Xcode 10 support
+- Update Demo supporting Xcode 10 with Swift 4.2
+
 ## 4.2.0
 
 - Updated RxSwift requirement. 
