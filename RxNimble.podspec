@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxNimble"
-  s.version      = "4.3.0"
+  s.version      = "4.4.0"
   s.summary      = "Nimble extensions that making unit testing with RxSwift easier 🎉"
   s.description  = <<-DESC
     This library includes functions that make testing RxSwift projects easier with Nimble.
@@ -13,10 +13,25 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.10"
   s.tvos.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/RxSwiftCommunity/RxNimble.git", :tag => s.version }
-  s.source_files  = "Source/**/*.swift"
-  s.dependency "Nimble", "~> 7.0"
-  s.dependency "RxSwift", "~> 4.2"
-  s.dependency "RxBlocking", "~> 4.0"
+  s.default_subspec = "RxBlocking"
   
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
+
+  s.subspec "Core" do |ss|
+    ss.source_files  = "Source/Core/"
+	ss.dependency "Nimble", "~> 7.0"
+	ss.dependency "RxSwift", "~> 4.2"
+  end
+
+  s.subspec "RxBlocking" do |ss|
+    ss.source_files = "Source/RxBlocking/"
+    ss.dependency "RxNimble/Core"
+    ss.dependency "RxBlocking"
+  end
+
+  s.subspec "RxTest" do |ss|
+    ss.source_files = "Source/RxTest/"
+    ss.dependency "RxNimble/Core"
+    ss.dependency "RxTest"
+  end
 end
