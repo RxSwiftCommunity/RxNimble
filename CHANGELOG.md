@@ -2,7 +2,7 @@
 
 ## Current Master
 
-- Nothing yet!
+- Carthage support
 
 ## 4.4.0
 
