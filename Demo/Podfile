@@ -12,7 +12,7 @@ target 'DemoTests' do
 
 pod 'Quick'
 pod 'Nimble'
-pod 'RxNimble', path: '../'
+pod 'RxNimble', subspecs: ['RxBlocking', 'RxTest'], path: '../'
 
 end
 

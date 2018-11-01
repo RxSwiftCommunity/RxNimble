@@ -3,16 +3,8 @@ import Nimble
 import RxSwift
 import RxNimble
 
-class RxNimbleTest: QuickSpec {
+class RxNimbleRxBlockingTests: QuickSpec {
     override func spec() {
-        /// A type-erased `Swift.Error` for testing purposes
-        struct AnyError: Swift.Error {
-            let message: String
-            init(_ message: String = "") {
-                self.message = message
-            }
-        }
-
         //MARK: First
         describe("First") {
             it("works with plain observables") {
@@ -39,7 +31,7 @@ class RxNimbleTest: QuickSpec {
 
             it("get first error") {
                 let subject = ReplaySubject<Any>.createUnbounded()
-                subject.onError(AnyError())
+                subject.onError(AnyError.any)
 
                 expect(subject).first.to(throwError())
             }
@@ -64,7 +56,7 @@ class RxNimbleTest: QuickSpec {
             it("error, if terminated with error") {
                 let subject = ReplaySubject<Any>.createUnbounded()
                 subject.onNext("Hello, world!")
-                subject.onError(AnyError())
+                subject.onError(AnyError.any)
 
                 expect(subject).last.to(throwError())
             }

@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4288F2217D7B0000D3651D /* RxNimbleRxTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4288F1217D7B0000D3651D /* RxNimbleRxTestTests.swift */; };
+		3A4288F4217D7B6200D3651D /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4288F3217D7B6200D3651D /* AnyError.swift */; };
 		5E47F32C1C3EAE9B00EC0751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47F32B1C3EAE9B00EC0751 /* AppDelegate.swift */; };
 		5E47F32E1C3EAE9B00EC0751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47F32D1C3EAE9B00EC0751 /* ViewController.swift */; };
 		5E47F3311C3EAE9B00EC0751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E47F32F1C3EAE9B00EC0751 /* Main.storyboard */; };
 		5E47F3331C3EAE9B00EC0751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E47F3321C3EAE9B00EC0751 /* Assets.xcassets */; };
 		5E47F3361C3EAE9B00EC0751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E47F3341C3EAE9B00EC0751 /* LaunchScreen.storyboard */; };
-		5E47F3411C3EAE9B00EC0751 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47F3401C3EAE9B00EC0751 /* DemoTests.swift */; };
+		5E47F3411C3EAE9B00EC0751 /* RxNimbleRxBlockingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47F3401C3EAE9B00EC0751 /* RxNimbleRxBlockingTests.swift */; };
 		D04F8C922A4EA6727B35872D /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9265FBADB809B4B52B402D23 /* Pods_Demo.framework */; };
 		F189612069FC08D6409FD015 /* Pods_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305E5AFA494DF2A10E0B8767 /* Pods_DemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		305E5AFA494DF2A10E0B8767 /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3388B98AFD3E9302DB045597 /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A4288F1217D7B0000D3651D /* RxNimbleRxTestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxNimbleRxTestTests.swift; sourceTree = "<group>"; };
+		3A4288F3217D7B6200D3651D /* AnyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
 		5E47F3281C3EAE9B00EC0751 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E47F32B1C3EAE9B00EC0751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E47F32D1C3EAE9B00EC0751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +42,7 @@
 		5E47F3351C3EAE9B00EC0751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E47F3371C3EAE9B00EC0751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E47F33C1C3EAE9B00EC0751 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E47F3401C3EAE9B00EC0751 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
+		5E47F3401C3EAE9B00EC0751 /* RxNimbleRxBlockingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxNimbleRxBlockingTests.swift; sourceTree = "<group>"; };
 		5E47F3421C3EAE9B00EC0751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9265FBADB809B4B52B402D23 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94276AA888ACDCBD57B00C60 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +117,9 @@
 		5E47F33F1C3EAE9B00EC0751 /* DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				5E47F3401C3EAE9B00EC0751 /* DemoTests.swift */,
+				3A4288F3217D7B6200D3651D /* AnyError.swift */,
+				5E47F3401C3EAE9B00EC0751 /* RxNimbleRxBlockingTests.swift */,
+				3A4288F1217D7B0000D3651D /* RxNimbleRxTestTests.swift */,
 				5E47F3421C3EAE9B00EC0751 /* Info.plist */,
 			);
 			path = DemoTests;
@@ -259,6 +265,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxNimble/RxNimble.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -267,6 +274,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxNimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -307,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E47F3411C3EAE9B00EC0751 /* DemoTests.swift in Sources */,
+				3A4288F4217D7B6200D3651D /* AnyError.swift in Sources */,
+				3A4288F2217D7B0000D3651D /* RxNimbleRxTestTests.swift in Sources */,
+				5E47F3411C3EAE9B00EC0751 /* RxNimbleRxBlockingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

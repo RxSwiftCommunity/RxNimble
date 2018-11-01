@@ -23,12 +23,48 @@ expect(observable).first == 42
 
 Nice.
 
+---
+
+If on the other hand you'd rather use [RxTest](http://cocoapods.org/pods/RxTest) instead of `RxBlocking`, you can do it by specifying RxNimble's `RxTest` subspec. With _RxTest_ you can have more powerful tests, checking a stream as a whole instead of being limited to `first`, `last` and `array` (while the last 2 implicitly require the stream to have completed).
+
+That means _RxTest_ allows you to verify the occurrence of multiple `next`, `error` and `completed` events at specific virtual times:
+
+```
+expect(subject).events(scheduler: scheduler, disposeBag: disposeBag)
+    .to(equal([
+        Recorded.next(5, "Hello"),
+        Recorded.next(10, "World"),
+        Recorded.completed(100)
+        ]))
+```
+
+You may also verify specific error types:
+
+```
+expect(imageSubject).events(scheduler: scheduler, disposeBag: disposeBag)
+    .to(equal([
+        Recorded.error(5, ImageError.invalidImage)
+        ]))
+```
+
 ## Installation
 
-Add to your podfile:
+Add to the tests target in your Podfile:
 
 ```rb
-pod 'RxNimble'
+pod 'RxNimble' # same as RxNimble/RxBlocking
+```
+
+or
+
+```rb
+pod 'RxNimble/RxTest' # installs RxTest instead of RxBlocking
+```
+
+or even
+
+```rb
+pod 'RxNimble', subspecs: ['RxBlocking', 'RxTest'] # installs both dependencies
 ```
 
 And `pod install` and that's it!

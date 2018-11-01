@@ -2,7 +2,7 @@
 
 ## Current Master
 
-- Nothing yet.
+- Added support to RxTest. Users may now choose between `RxTest` and `RxBlocking` (or both)
 
 ## 4.3.0
 - Swift 4.2 support
