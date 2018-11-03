@@ -79,9 +79,10 @@ Add to your Cartfile.private:
 github 'RxSwiftCommunity/RxNimble'
 ```
 
-Run `carthage update --cache-builds` then drag & drop RxNimble.framework from the Carthage/Builds folder into your project.
+Run `carthage update --cache-builds` then drag & drop from the Carthage/Builds folder into your project either or both of:
 
-One also needs to import RxBlocking and RxTest built frameworks.
+- `RxNimbleRxBlocking.framework` and `RxBlocking.framework`
+- `RxNimbleRxTest.framework` and `RxTest.framework`
 
 ## Known Issues
 

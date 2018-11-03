@@ -1,7 +1,9 @@
 osx_image: xcode10
 language: objective-c
 xcode_project: RxNimble.xcodeproj
-xcode_scheme: RxNimble
+xcode_scheme:
+  - RxNimbleRxBlocking
+  - RxNimbleRxTest
 
 cache:
   directories:

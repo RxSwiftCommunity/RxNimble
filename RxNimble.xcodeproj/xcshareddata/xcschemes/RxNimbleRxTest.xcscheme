@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3AD16F7B21866AE7007FF6A8"
-               BuildableName = "RxNimble.framework"
-               BlueprintName = "RxNimble"
+               BlueprintIdentifier = "3A2CFEEA218DF97500E4F547"
+               BuildableName = "RxNimbleRxTest.framework"
+               BlueprintName = "RxNimbleRxTest"
                ReferencedContainer = "container:RxNimble.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3AD16F8321866AE7007FF6A8"
-               BuildableName = "RxNimbleTests.xctest"
-               BlueprintName = "RxNimbleTests"
+               BlueprintIdentifier = "3A7FDBBB218E37A80065F6C6"
+               BuildableName = "RxNimbleRxTestTests.xctest"
+               BlueprintName = "RxNimbleRxTestTests"
                ReferencedContainer = "container:RxNimble.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3AD16F7B21866AE7007FF6A8"
-            BuildableName = "RxNimble.framework"
-            BlueprintName = "RxNimble"
+            BlueprintIdentifier = "3A2CFEEA218DF97500E4F547"
+            BuildableName = "RxNimbleRxTest.framework"
+            BlueprintName = "RxNimbleRxTest"
             ReferencedContainer = "container:RxNimble.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3AD16F7B21866AE7007FF6A8"
-            BuildableName = "RxNimble.framework"
-            BlueprintName = "RxNimble"
+            BlueprintIdentifier = "3A2CFEEA218DF97500E4F547"
+            BuildableName = "RxNimbleRxTest.framework"
+            BlueprintName = "RxNimbleRxTest"
             ReferencedContainer = "container:RxNimble.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3AD16F7B21866AE7007FF6A8"
-            BuildableName = "RxNimble.framework"
-            BlueprintName = "RxNimble"
+            BlueprintIdentifier = "3A2CFEEA218DF97500E4F547"
+            BuildableName = "RxNimbleRxTest.framework"
+            BlueprintName = "RxNimbleRxTest"
             ReferencedContainer = "container:RxNimble.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
