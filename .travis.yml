@@ -1,6 +1,7 @@
 osx_image: xcode10
 language: objective-c
 xcode_project: RxNimble.xcodeproj
+xcode_scheme: RxNimble
 
 cache:
   directories:
@@ -11,16 +12,11 @@ before_install:
   - carthageversion=$(carthage version)
   - if [ $carthageversion != "0.31.2" ]; then brew uninstall carthage; HOMEBREW_NO_AUTO_UPDATE=1 brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/a85feeb75bc9e9beb7f2e9dc6e2ccc996a6aeaf5/Formula/carthage.rb; fi
 
-matrix:
+jobs:
   include:
     - stage: prepare carthage cache
       script:
         - carthage bootstrap --no-use-binaries --cache-builds
-    - stage: unit tests
-      xcode_scheme: RxNimble-macOS
-    - xcode_scheme: RxNimble-iOS
-    - xcode_scheme: RxNimble-tvOS
-      xcode_destination: OS=12.0,name=Apple TV # xcodebuild complains about Bitcode if we don't specify this
     - stage: carthage builds
       script:
         - carthage build --cache-builds --no-skip-current --platform macOS
@@ -28,3 +24,8 @@ matrix:
         - carthage build --cache-builds --no-skip-current --platform iOS
     - script:
         - carthage build --cache-builds --no-skip-current --platform tvOS
+
+stages:
+  - prepare carthage cache
+  - test
+  - carthage builds
