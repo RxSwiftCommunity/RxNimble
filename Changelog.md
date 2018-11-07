@@ -2,9 +2,14 @@
 
 ## Current Master
 
+- Nothing yet!
+
+## 4.4.0
+
 - Added support to RxTest. Users may now choose between `RxTest` and `RxBlocking` (or both)
 
 ## 4.3.0
+
 - Swift 4.2 support
 - Xcode 10 support
 - Update Demo supporting Xcode 10 with Swift 4.2
