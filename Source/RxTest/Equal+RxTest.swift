@@ -1,6 +1,6 @@
 import Nimble
 import RxSwift
-@testable import RxTest
+import RxTest
 
 /// A Nimble matcher that succeeds when the actual events are equal to the expected events.
 public func equal<T: Equatable>(_ expectedEvents: RecordedEvents<T>) -> Predicate<RecordedEvents<T>> {
@@ -14,4 +14,21 @@ public func equal<T: Equatable>(_ expectedEvents: RecordedEvents<T>) -> Predicat
                                 "emit <\(stringify(expectedEquatableEvents))>")
         )
     }
+}
+
+struct AnyEquatable<Target>
+: Equatable {
+    typealias Comparer = (Target, Target) -> Bool
+
+    let _target: Target
+    let _comparer: Comparer
+
+    init(target: Target, comparer: @escaping Comparer) {
+        _target = target
+        _comparer = comparer
+    }
+}
+
+func == <T>(lhs: AnyEquatable<T>, rhs: AnyEquatable<T>) -> Bool {
+    return lhs._comparer(lhs._target, rhs._target)
 }
