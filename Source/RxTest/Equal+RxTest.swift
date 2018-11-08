@@ -16,6 +16,7 @@ public func equal<T: Equatable>(_ expectedEvents: RecordedEvents<T>) -> Predicat
     }
 }
 
+// Borrowed this implementation from RxTest.
 struct AnyEquatable<Target>
 : Equatable {
     typealias Comparer = (Target, Target) -> Bool
