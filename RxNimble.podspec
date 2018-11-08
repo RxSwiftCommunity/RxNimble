@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.source       = { :git => "https://github.com/RxSwiftCommunity/RxNimble.git", :tag => s.version }
   s.default_subspec = "RxBlocking"
+  s.frameworks = "Foundation", "XCTest"
   
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
 
