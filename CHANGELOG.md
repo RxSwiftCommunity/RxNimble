@@ -4,6 +4,10 @@
 
 - Carthage support
 
+## 4.4.1
+
+- Adds support for Carthage (4.4.1 does not exist on CocoaPods).
+
 ## 4.4.0
 
 - Added support to RxTest. Users may now choose between `RxTest` and `RxBlocking` (or both)
