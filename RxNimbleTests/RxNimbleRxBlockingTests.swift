@@ -1,7 +1,7 @@
 import Quick
 import Nimble
 import RxSwift
-import RxNimble
+import RxNimbleRxBlocking
 
 class RxNimbleRxBlockingTests: QuickSpec {
     override func spec() {

@@ -2,7 +2,7 @@ import Quick
 import Nimble
 import RxSwift
 import RxTest
-import RxNimble
+import RxNimbleRxTest
 
 class RxNimbleRxTestTests: QuickSpec {
     override func spec() {

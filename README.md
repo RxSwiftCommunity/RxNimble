@@ -2,7 +2,7 @@
 
 # RxNimble
 
-Nimble extensions that making unit testing with RxSwift easier :tada:
+Nimble extensions that make unit testing with RxSwift easier :tada:
 
 ## Why
 
@@ -49,6 +49,8 @@ expect(imageSubject).events(scheduler: scheduler, disposeBag: disposeBag)
 
 ## Installation
 
+### CocoaPods
+
 Add to the tests target in your Podfile:
 
 ```rb
@@ -68,6 +70,19 @@ pod 'RxNimble', subspecs: ['RxBlocking', 'RxTest'] # installs both dependencies
 ```
 
 And `pod install` and that's it!
+
+### Carthage
+
+Add to your Cartfile.private:
+
+```rb
+github 'RxSwiftCommunity/RxNimble'
+```
+
+Run `carthage update --cache-builds` then drag & drop from the Carthage/Builds folder into your project either or both of:
+
+- `RxNimbleRxBlocking.framework` and `RxBlocking.framework`
+- `RxNimbleRxTest.framework` and `RxTest.framework`
 
 ## Known Issues
 
