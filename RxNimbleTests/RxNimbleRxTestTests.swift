@@ -83,9 +83,9 @@ class RxNimbleRxTestTests: QuickSpec {
                     error(15, AnyError.any)
                     ])
                 
-                let observable = PublishSubject<String>()
-                observable.map({ _ in fatalError() }).subscribe().disposed(by: disposeBag)
-                subject.subscribe(observable).disposed(by: disposeBag)
+                let observer = PublishSubject<String>()
+                observer.map({ _ in fatalError() }).subscribe().disposed(by: disposeBag)
+                subject.subscribe(observer).disposed(by: disposeBag)
                 
                 expect(subject).events(scheduler: scheduler, disposeBag: disposeBag)
                     .to(throwAssertion())
