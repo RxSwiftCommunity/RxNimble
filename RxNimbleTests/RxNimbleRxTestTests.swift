@@ -75,6 +75,31 @@ class RxNimbleRxTestTests: QuickSpec {
                 expect(subject).events(scheduler: scheduler, disposeBag: disposeBag)
                     .toNot(throwError())
             }
+            
+            it("throws assertion if any event is assertion") {
+                let subject = scheduler.createHotObservable([
+                    Recorded.next(5, "Hello"),
+                    Recorded.next(10, "World"),
+                    error(15, AnyError.any)
+                    ])
+                
+                let observable = PublishSubject<String>()
+                observable.map({ _ in fatalError() }).subscribe().disposed(by: disposeBag)
+                subject.subscribe(observable).disposed(by: disposeBag)
+                
+                expect(subject).events(scheduler: scheduler, disposeBag: disposeBag)
+                    .to(throwAssertion())
+            }
+            
+            it("does not throw assertion if no assertion") {
+                let subject = scheduler.createHotObservable([
+                    Recorded.next(5, "Hello"),
+                    Recorded.next(10, "World")
+                    ])
+                
+                expect(subject).events(scheduler: scheduler, disposeBag: disposeBag)
+                    .toNot(throwAssertion())
+            }
 
             it("subscribes at specified initial time") {
                 let initialTime = 50
