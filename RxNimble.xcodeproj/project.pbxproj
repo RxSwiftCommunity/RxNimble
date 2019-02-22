@@ -22,6 +22,7 @@
 		3A7FDBC3218E37A80065F6C6 /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A632180218CE18000F190FD /* AnyError.swift */; };
 		3A7FDBC6218E37A80065F6C6 /* RxNimbleRxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2CFEF9218DF97500E4F547 /* RxNimbleRxTest.framework */; };
 		3AD16F8521866AE7007FF6A8 /* RxNimbleRxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD16F7C21866AE7007FF6A8 /* RxNimbleRxBlocking.framework */; };
+		60FD696E221F835000BA8DE9 /* ThrowAssert + RxTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FD696C221F81C300BA8DE9 /* ThrowAssert + RxTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		3AD16F0421866404007FF6A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD16F7C21866AE7007FF6A8 /* RxNimbleRxBlocking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxNimbleRxBlocking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD16F8421866AE7007FF6A8 /* RxNimbleRxBlockingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxNimbleRxBlockingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FD696C221F81C300BA8DE9 /* ThrowAssert + RxTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThrowAssert + RxTest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				3A632190218CE1CE00F190FD /* Equal+RxTest.swift */,
 				3A63218E218CE1CE00F190FD /* Expectation+RxTest.swift */,
 				3A63218F218CE1CE00F190FD /* ThrowError+RxTest.swift */,
+				60FD696C221F81C300BA8DE9 /* ThrowAssert + RxTest.swift */,
 			);
 			path = RxTest;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				3A2CFEEF218DF97500E4F547 /* ThrowError+RxTest.swift in Sources */,
 				3A2CFEF0218DF97500E4F547 /* Expectation+RxTest.swift in Sources */,
 				3A2CFEF2218DF97500E4F547 /* Equal+RxTest.swift in Sources */,
+				60FD696E221F835000BA8DE9 /* ThrowAssert + RxTest.swift in Sources */,
 				3A2CFEF3218DF97500E4F547 /* Expectation+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
