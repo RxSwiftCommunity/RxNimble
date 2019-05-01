@@ -24,6 +24,12 @@
 		3AD16F8521866AE7007FF6A8 /* RxNimbleRxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD16F7C21866AE7007FF6A8 /* RxNimbleRxBlocking.framework */; };
 		481CBA2C2263875C007F3053 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481CBA2B2263875C007F3053 /* Nimble.framework */; };
 		481CBA2E2263876F007F3053 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481CBA2D2263876F007F3053 /* Nimble.framework */; };
+		48E1F2D422792ECF00CA7218 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D322792ECF00CA7218 /* RxSwift.framework */; };
+		48E1F2D622792ED400CA7218 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D522792ED400CA7218 /* RxTest.framework */; };
+		48E1F2D822792EDB00CA7218 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D722792EDB00CA7218 /* RxSwift.framework */; };
+		48E1F2DA22792EE000CA7218 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D922792EE000CA7218 /* RxBlocking.framework */; };
+		48E1F2DD22792FC800CA7218 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2DC22792FC800CA7218 /* RxAtomic.framework */; };
+		48E1F2DF22792FCE00CA7218 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2DE22792FCE00CA7218 /* RxAtomic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,12 @@
 		3AD16F8421866AE7007FF6A8 /* RxNimbleRxBlockingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxNimbleRxBlockingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		481CBA2B2263875C007F3053 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		481CBA2D2263876F007F3053 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E1F2D322792ECF00CA7218 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E1F2D522792ED400CA7218 /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E1F2D722792EDB00CA7218 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E1F2D922792EE000CA7218 /* RxBlocking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E1F2DC22792FC800CA7218 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E1F2DE22792FCE00CA7218 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E1F2DF22792FCE00CA7218 /* RxAtomic.framework in Frameworks */,
+				48E1F2D622792ED400CA7218 /* RxTest.framework in Frameworks */,
+				48E1F2D422792ECF00CA7218 /* RxSwift.framework in Frameworks */,
 				481CBA2E2263876F007F3053 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +101,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E1F2DD22792FC800CA7218 /* RxAtomic.framework in Frameworks */,
+				48E1F2DA22792EE000CA7218 /* RxBlocking.framework in Frameworks */,
+				48E1F2D822792EDB00CA7218 /* RxSwift.framework in Frameworks */,
 				481CBA2C2263875C007F3053 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +194,12 @@
 		3AD16F6421866941007FF6A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				48E1F2DE22792FCE00CA7218 /* RxAtomic.framework */,
+				48E1F2DC22792FC800CA7218 /* RxAtomic.framework */,
+				48E1F2D922792EE000CA7218 /* RxBlocking.framework */,
+				48E1F2D722792EDB00CA7218 /* RxSwift.framework */,
+				48E1F2D522792ED400CA7218 /* RxTest.framework */,
+				48E1F2D322792ECF00CA7218 /* RxSwift.framework */,
 				481CBA2D2263876F007F3053 /* Nimble.framework */,
 				481CBA2B2263875C007F3053 /* Nimble.framework */,
 			);
