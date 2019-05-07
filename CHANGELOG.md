@@ -3,6 +3,7 @@
 ## Current Master
 
 - Carthage support
+- Support for Xcode 10.2, RxSwift 5.0 & Swift 5
 
 ## 4.4.1
 
