@@ -17,7 +17,7 @@ public extension Expectation where T: ObservableType {
      
      Transforms the expression by blocking sequence and returns its first element.
     */
-    public var first: Expectation<T.E> {
+    var first: Expectation<T.Element> {
         return transform { source in
             try source?.toBlocking().first()
         }
@@ -27,7 +27,7 @@ public extension Expectation where T: ObservableType {
 
      Transforms the expression by blocking sequence and returns its last element.
      */
-    public var last: Expectation<T.E> {
+    var last: Expectation<T.Element> {
         return transform { source in
             try source?.toBlocking().last()
         }
@@ -38,7 +38,7 @@ public extension Expectation where T: ObservableType {
 
      Transforms the expression by blocking sequence and returns its elements.
      */
-    public var array: Expectation<[T.E]> {
+    var array: Expectation<[T.Element]> {
         return transform { source in
             try source?.toBlocking().toArray()
         }
