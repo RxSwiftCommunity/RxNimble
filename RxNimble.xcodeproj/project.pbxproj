@@ -28,8 +28,6 @@
 		48E1F2D622792ED400CA7218 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D522792ED400CA7218 /* RxTest.framework */; };
 		48E1F2D822792EDB00CA7218 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D722792EDB00CA7218 /* RxSwift.framework */; };
 		48E1F2DA22792EE000CA7218 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D922792EE000CA7218 /* RxBlocking.framework */; };
-		48E1F2DD22792FC800CA7218 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2DC22792FC800CA7218 /* RxAtomic.framework */; };
-		48E1F2DF22792FCE00CA7218 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2DE22792FCE00CA7218 /* RxAtomic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +71,6 @@
 		48E1F2D522792ED400CA7218 /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E1F2D722792EDB00CA7218 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E1F2D922792EE000CA7218 /* RxBlocking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48E1F2DC22792FC800CA7218 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48E1F2DE22792FCE00CA7218 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E1F2DF22792FCE00CA7218 /* RxAtomic.framework in Frameworks */,
 				48E1F2D622792ED400CA7218 /* RxTest.framework in Frameworks */,
 				48E1F2D422792ECF00CA7218 /* RxSwift.framework in Frameworks */,
 				481CBA2E2263876F007F3053 /* Nimble.framework in Frameworks */,
@@ -101,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E1F2DD22792FC800CA7218 /* RxAtomic.framework in Frameworks */,
 				48E1F2DA22792EE000CA7218 /* RxBlocking.framework in Frameworks */,
 				48E1F2D822792EDB00CA7218 /* RxSwift.framework in Frameworks */,
 				481CBA2C2263875C007F3053 /* Nimble.framework in Frameworks */,
@@ -194,8 +188,6 @@
 		3AD16F6421866941007FF6A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48E1F2DE22792FCE00CA7218 /* RxAtomic.framework */,
-				48E1F2DC22792FC800CA7218 /* RxAtomic.framework */,
 				48E1F2D922792EE000CA7218 /* RxBlocking.framework */,
 				48E1F2D722792EDB00CA7218 /* RxSwift.framework */,
 				48E1F2D522792ED400CA7218 /* RxTest.framework */,
