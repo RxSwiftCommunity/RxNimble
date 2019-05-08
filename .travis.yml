@@ -1,4 +1,4 @@
-osx_image: xcode10
+osx_image: xcode10.2
 language: objective-c
 xcode_project: RxNimble.xcodeproj
 xcode_scheme:
@@ -12,7 +12,7 @@ cache:
 
 before_install:
   - carthageversion=$(carthage version)
-  - if [ $carthageversion != "0.31.2" ]; then brew uninstall carthage; HOMEBREW_NO_AUTO_UPDATE=1 brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/a85feeb75bc9e9beb7f2e9dc6e2ccc996a6aeaf5/Formula/carthage.rb; fi
+  - if [ $carthageversion != "0.33.0" ]; then brew uninstall carthage; HOMEBREW_NO_AUTO_UPDATE=1 brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/d453dd956dbfc5b724b0fdaeb14f9480f461479d/Formula/carthage.rb; fi
 
 jobs:
   include:

@@ -14,9 +14,9 @@ public extension Expectation where T: ObservableType {
     /// - Returns: an expectation of the actual events emitted by the observable.
     func events(scheduler: TestScheduler,
                 disposeBag: DisposeBag,
-                startAt initialTime: Int = 0) -> Expectation<RecordedEvents<T.E>> {
+                startAt initialTime: Int = 0) -> Expectation<RecordedEvents<T.Element>> {
         return transform { source in
-            let results = scheduler.createObserver(T.E.self)
+            let results = scheduler.createObserver(T.Element.self)
 
             scheduler.scheduleAt(initialTime) {
                 source?.subscribe(results).disposed(by: disposeBag)

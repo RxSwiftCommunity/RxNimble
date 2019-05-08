@@ -28,8 +28,6 @@
 		48E1F2D622792ED400CA7218 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D522792ED400CA7218 /* RxTest.framework */; };
 		48E1F2D822792EDB00CA7218 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D722792EDB00CA7218 /* RxSwift.framework */; };
 		48E1F2DA22792EE000CA7218 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2D922792EE000CA7218 /* RxBlocking.framework */; };
-		48E1F2DD22792FC800CA7218 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2DC22792FC800CA7218 /* RxAtomic.framework */; };
-		48E1F2DF22792FCE00CA7218 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E1F2DE22792FCE00CA7218 /* RxAtomic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +71,6 @@
 		48E1F2D522792ED400CA7218 /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E1F2D722792EDB00CA7218 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E1F2D922792EE000CA7218 /* RxBlocking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxBlocking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48E1F2DC22792FC800CA7218 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48E1F2DE22792FCE00CA7218 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E1F2DF22792FCE00CA7218 /* RxAtomic.framework in Frameworks */,
 				48E1F2D622792ED400CA7218 /* RxTest.framework in Frameworks */,
 				48E1F2D422792ECF00CA7218 /* RxSwift.framework in Frameworks */,
 				481CBA2E2263876F007F3053 /* Nimble.framework in Frameworks */,
@@ -101,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48E1F2DD22792FC800CA7218 /* RxAtomic.framework in Frameworks */,
 				48E1F2DA22792EE000CA7218 /* RxBlocking.framework in Frameworks */,
 				48E1F2D822792EDB00CA7218 /* RxSwift.framework in Frameworks */,
 				481CBA2C2263875C007F3053 /* Nimble.framework in Frameworks */,
@@ -194,8 +188,6 @@
 		3AD16F6421866941007FF6A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				48E1F2DE22792FCE00CA7218 /* RxAtomic.framework */,
-				48E1F2DC22792FC800CA7218 /* RxAtomic.framework */,
 				48E1F2D922792EE000CA7218 /* RxBlocking.framework */,
 				48E1F2D722792EDB00CA7218 /* RxSwift.framework */,
 				48E1F2D522792ED400CA7218 /* RxTest.framework */,
@@ -309,13 +301,19 @@
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				TargetAttributes = {
+					3A2CFEEA218DF97500E4F547 = {
+						LastSwiftMigration = 1020;
+					};
+					3A7FDBBB218E37A80065F6C6 = {
+						LastSwiftMigration = 1020;
+					};
 					3AD16F7B21866AE7007FF6A8 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					3AD16F8321866AE7007FF6A8 = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -325,6 +323,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3AD16EEA21866404007FF6A8;
 			productRefGroup = 3AD16EF521866404007FF6A8 /* Products */;
@@ -467,7 +466,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -513,7 +512,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -557,7 +556,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -601,7 +600,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.RxNimbleRxTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -769,7 +768,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -814,7 +813,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -858,7 +857,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -902,7 +901,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.RxNimbleRxBlockingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
