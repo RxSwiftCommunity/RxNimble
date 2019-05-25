@@ -73,5 +73,21 @@ class RxNimbleRxBlockingTests: QuickSpec {
                 expect(subject).array == ["Hello", "World"]
             }
         }
+
+        describe("Traits") {
+            let expectedValue = "some"
+            
+            it("works with Single") {
+                expect(Single.just(expectedValue)).first == expectedValue
+            }
+
+            it("works with Maybe") {
+                expect(Maybe.just(expectedValue)).first == expectedValue
+            }
+
+            it("works with Completable") {
+                expect(Observable.just(expectedValue).ignoreElements()).array.to(beEmpty())
+            }
+        }
     }
 }

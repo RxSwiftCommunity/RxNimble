@@ -10,7 +10,7 @@ import Nimble
 import RxSwift
 import RxBlocking
 
-public extension Expectation where T: ObservableType {
+public extension Expectation where T: ObservableConvertibleType {
 
     /**
      Expectation with sequence's first element

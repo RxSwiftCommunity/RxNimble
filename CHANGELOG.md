@@ -2,7 +2,7 @@
 
 ## Current Master
 
-- Nothing yet!
+- Support for RxSwift traits
 
 ## 4.5.0
 
