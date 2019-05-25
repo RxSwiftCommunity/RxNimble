@@ -4,7 +4,7 @@ import RxTest
 
 public typealias RecordedEvents<E> = [Recorded<Event<E>>]
 
-public extension Expectation where T: ObservableType {
+public extension Expectation where T: ObservableConvertibleType {
     /// Make an expectation on the events emitted by an observable.
     ///
     /// - Parameters:
@@ -19,7 +19,7 @@ public extension Expectation where T: ObservableType {
             let results = scheduler.createObserver(T.Element.self)
 
             scheduler.scheduleAt(initialTime) {
-                source?.subscribe(results).disposed(by: disposeBag)
+                source?.asObservable().subscribe(results).disposed(by: disposeBag)
             }
             scheduler.start()
 

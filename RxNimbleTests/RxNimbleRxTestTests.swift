@@ -8,6 +8,7 @@ class RxNimbleRxTestTests: QuickSpec {
     override func spec() {
         describe("Events") {
             let initialClock = 0
+            let expectedValue = "some"
             var scheduler: TestScheduler!
             var disposeBag: DisposeBag!
 
@@ -100,6 +101,30 @@ class RxNimbleRxTestTests: QuickSpec {
                     .to(equal([
                          .completed(100)
                         ]))
+            }
+
+            it("works with Single") {
+                // Given
+                let expectedEvents = Recorded.events(.next(5, expectedValue), .completed(5))
+                let single = scheduler.createHotObservable(expectedEvents).asSingle()
+                // Then
+                expect(single).events(scheduler: scheduler, disposeBag: disposeBag) == expectedEvents
+            }
+
+            it("works with Maybe") {
+                // Given
+                let expectedEvents = Recorded.events(.next(5, expectedValue), .completed(5))
+                let maybe = scheduler.createHotObservable(expectedEvents).asMaybe()
+                // Then
+                expect(maybe).events(scheduler: scheduler, disposeBag: disposeBag) == expectedEvents
+            }
+
+            it("works with Completable") {
+                // Given
+                let expectedEvents = Recorded<Event<Never>>.events(.completed(5))
+                let completable = scheduler.createHotObservable(expectedEvents).ignoreElements()
+                // Then
+                expect(completable).events(scheduler: scheduler, disposeBag: disposeBag) == expectedEvents
             }
         }
     }
