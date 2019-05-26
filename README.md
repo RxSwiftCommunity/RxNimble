@@ -4,6 +4,8 @@
 
 Nimble extensions that make unit testing with RxSwift easier :tada:
 
+If you came here because you want to help out, please check out [contribution guide](CONTRIBUTING.md)
+
 ## Why
 
 RxSwift includes a really nifty little library called [RxBlocking](http://cocoapods.org/pods/RxBlocking) which provides convenience functions for peeking in on `Observable` instances. Check is a *blocking call*, hence the name. 
