@@ -28,3 +28,8 @@ Pods/
 # Carthage
 #
 Carthage
+
+# AppCode
+
+.idea
+
