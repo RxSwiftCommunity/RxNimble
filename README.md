@@ -23,6 +23,8 @@ expect(observable).first == 42
 
 Nice.
 
+This extension is also available for all Traits (e.g. `Single`, `Maybe`) and other types conforming to `ObservableConvertibleType`.
+
 ---
 
 If on the other hand you'd rather use [RxTest](http://cocoapods.org/pods/RxTest) instead of `RxBlocking`, you can do it by specifying RxNimble's `RxTest` subspec. With _RxTest_ you can have more powerful tests, checking a stream as a whole instead of being limited to `first`, `last` and `array` (while the last 2 implicitly require the stream to have completed).
@@ -35,7 +37,7 @@ expect(subject).events(scheduler: scheduler, disposeBag: disposeBag)
         Recorded.next(5, "Hello"),
         Recorded.next(10, "World"),
         Recorded.completed(100)
-        ]))
+       ]))
 ```
 
 You may also verify specific error types:
@@ -44,7 +46,7 @@ You may also verify specific error types:
 expect(imageSubject).events(scheduler: scheduler, disposeBag: disposeBag)
     .to(equal([
         Recorded.error(5, ImageError.invalidImage)
-        ]))
+       ]))
 ```
 
 ## Installation
