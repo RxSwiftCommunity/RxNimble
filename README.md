@@ -4,7 +4,7 @@
 
 Nimble extensions that make unit testing with RxSwift easier :tada:
 
-If you came here because you want to help out, please check out [contribution guide](CONTRIBUTING.md)
+If you came here because you want to help out, please check out the [contribution guide](CONTRIBUTING.md)
 
 ## Why
 
