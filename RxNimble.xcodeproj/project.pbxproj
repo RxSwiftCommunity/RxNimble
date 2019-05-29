@@ -15,7 +15,6 @@
 		3A56F53F218DEFA200705676 /* RxNimbleRxBlocking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AD16EF721866404007FF6A8 /* RxNimbleRxBlocking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A632185218CE18000F190FD /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A632180218CE18000F190FD /* AnyError.swift */; };
 		3A632188218CE18000F190FD /* RxNimbleRxBlockingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A632181218CE18000F190FD /* RxNimbleRxBlockingTests.swift */; };
-		3A63219C218CE1D900F190FD /* RxNimble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63219A218CE1D900F190FD /* RxNimble.swift */; };
 		3A63219F218CE1D900F190FD /* Expectation+Blocking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63219B218CE1D900F190FD /* Expectation+Blocking.swift */; };
 		3A6321A3218CE1DF00F190FD /* Expectation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6321A2218CE1DF00F190FD /* Expectation+Ext.swift */; };
 		3A7FDBC2218E37A80065F6C6 /* RxNimbleRxTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63217F218CE18000F190FD /* RxNimbleRxTestTests.swift */; };
@@ -56,7 +55,6 @@
 		3A63218E218CE1CE00F190FD /* Expectation+RxTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+RxTest.swift"; sourceTree = "<group>"; };
 		3A63218F218CE1CE00F190FD /* ThrowError+RxTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThrowError+RxTest.swift"; sourceTree = "<group>"; };
 		3A632190218CE1CE00F190FD /* Equal+RxTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Equal+RxTest.swift"; sourceTree = "<group>"; };
-		3A63219A218CE1D900F190FD /* RxNimble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxNimble.swift; sourceTree = "<group>"; };
 		3A63219B218CE1D900F190FD /* Expectation+Blocking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+Blocking.swift"; sourceTree = "<group>"; };
 		3A6321A2218CE1DF00F190FD /* Expectation+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Expectation+Ext.swift"; sourceTree = "<group>"; };
 		3A7FDBCB218E37A80065F6C6 /* RxNimbleRxTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxNimbleRxTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				3A63219B218CE1D900F190FD /* Expectation+Blocking.swift */,
-				3A63219A218CE1D900F190FD /* RxNimble.swift */,
 			);
 			path = RxBlocking;
 			sourceTree = "<group>";
@@ -394,7 +391,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A63219C218CE1D900F190FD /* RxNimble.swift in Sources */,
 				3A63219F218CE1D900F190FD /* Expectation+Blocking.swift in Sources */,
 				3A6321A3218CE1DF00F190FD /* Expectation+Ext.swift in Sources */,
 			);
