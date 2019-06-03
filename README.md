@@ -88,6 +88,19 @@ Run `carthage update --cache-builds` then drag & drop from the Carthage/Builds f
 - `RxNimbleRxBlocking.framework` and `RxBlocking.framework`
 - `RxNimbleRxTest.framework` and `RxTest.framework`
 
+## Migration 4.5.0 -> 5.0.0
+
+Deprecated function `equalFirst` was removed in favor of a more natural Nimble matcher API style.
+
+### RxNibmle 4.5.0:
+```swift
+expect(o).to(equalFirst(...))
+```
+### RxNibmle 5.0.0:
+```swift
+expect(o).first.to(equal(...))
+```
+
 ## Known Issues
 
 Very very _very_ rarely the Swift compiler gets confused about the different types and you need to use the original `RxBlocking` code.
