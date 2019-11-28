@@ -5,7 +5,9 @@ import RxNimbleRxBlocking
 
 class RxNimbleRxBlockingTests: QuickSpec {
     override func spec() {
-        //MARK: First
+
+        // MARK: First
+
         describe("First") {
             it("works with plain observables") {
                 let subject = ReplaySubject<String>.createUnbounded()
@@ -35,9 +37,18 @@ class RxNimbleRxBlockingTests: QuickSpec {
 
                 expect(subject).first.to(throwError())
             }
+
+            it("fails if first value is not being emitted in time") {
+                let subject = ReplaySubject<Any>.createUnbounded()
+
+                // Never push onNext
+
+                expect(subject).first(timeout: 1).to(throwError(RxError.timeout))
+            }
         }
 
-        //MARK: Last
+        // MARK: Last
+
         describe("Last") {
             it("checks for last element") {
                 let subject = ReplaySubject<String>.createUnbounded()
@@ -47,12 +58,14 @@ class RxNimbleRxBlockingTests: QuickSpec {
 
                 expect(subject).last == "World"
             }
+
             it("is nil, if sequence is empty") {
                 let subject = ReplaySubject<String>.createUnbounded()
                 subject.onCompleted()
 
                 expect(subject).last.to(beNil())
             }
+
             it("error, if terminated with error") {
                 let subject = ReplaySubject<Any>.createUnbounded()
                 subject.onNext("Hello, world!")
@@ -60,9 +73,19 @@ class RxNimbleRxBlockingTests: QuickSpec {
 
                 expect(subject).last.to(throwError())
             }
+
+            it("fails if last value is not being emitted in time") {
+                let subject = ReplaySubject<Any>.createUnbounded()
+
+                subject.onNext("Hi")
+                // Never complete
+
+                expect(subject).last(timeout: 1).to(throwError(RxError.timeout))
+            }
         }
 
-        //MARK: Array
+        // MARK: Array
+
         describe("Array") {
             it("checks for timeline") {
                 let subject = ReplaySubject<String>.createUnbounded()
