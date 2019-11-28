@@ -25,6 +25,12 @@ expect(observable).first == 42
 
 Nice.
 
+It's also possible to pass a timeout to the blocking operators:
+
+```swift
+expect(observable).first(timeout: 3) == 42
+```
+
 This extension is also available for all Traits (e.g. `Single`, `Maybe`) and other types conforming to `ObservableConvertibleType`.
 
 ---
