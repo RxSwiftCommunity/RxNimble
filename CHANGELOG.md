@@ -3,6 +3,7 @@
 ## Current Master
 
 - Support for RxSwift traits
+- Adds support for passing a timeout to RxBlockings' operators
 
 ## 4.5.0
 
