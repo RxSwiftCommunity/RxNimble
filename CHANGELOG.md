@@ -2,7 +2,8 @@
 
 ## Current Master
 
-- Nothing yet!
+- Support for Swift Package Manager
+- Expectation+Blocking.swift imports `Foundation` to fix a compilation issue with SPM
 
 ## 4.6.0
 
