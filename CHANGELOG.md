@@ -2,6 +2,10 @@
 
 ## Current Master
 
+- Nothing yet!
+
+## 4.7.0
+
 - Support for Swift Package Manager
 - Expectation+Blocking.swift imports `Foundation` to fix a compilation issue with SPM
 
@@ -31,7 +35,7 @@
 
 ## 4.2.0
 
-- Updated RxSwift requirement. 
+- Updated RxSwift requirement.
 - Swift 4.1 support again. See [#30](https://github.com/RxSwiftCommunity/RxNimble/pull/31).
 
 ## 4.1.1
@@ -42,10 +46,10 @@
 
 - Deprecate old matcher functions
 - Introduce following properties for `expect(observable)` to match `RxBlocking` operator
-   - `first`
-   - `last`
-   - `array`
-   
+  - `first`
+  - `last`
+  - `array`
+
 ## 4.0.0
 
 - Support for Swift 4.0, RxSwift 4.0 and RxBlocking 4.0. See [#27](https://github.com/RxSwiftCommunity/RxNimble/pull/27).
