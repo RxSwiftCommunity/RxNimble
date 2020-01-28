@@ -6,6 +6,7 @@
 //
 //
 
+import Foundation
 import Nimble
 import RxSwift
 import RxBlocking
