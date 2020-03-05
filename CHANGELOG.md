@@ -4,6 +4,10 @@
 
 - Nothing yet!
 
+## 4.7.1
+
+- Weak links with XCTest.
+
 ## 4.7.0
 
 - Support for Swift Package Manager
