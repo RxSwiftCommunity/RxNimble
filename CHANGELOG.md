@@ -4,6 +4,10 @@
 
 - Nothing yet!
 
+## 4.7.2
+
+- More weak linking fixus. A Carthage/SPM-only release. 
+
 ## 4.7.1
 
 - Weak links with XCTest.
