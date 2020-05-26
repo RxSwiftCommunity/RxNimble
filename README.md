@@ -98,11 +98,11 @@ Run `carthage update --cache-builds` then drag & drop from the Carthage/Builds f
 
 Deprecated function `equalFirst` was removed in favor of a more natural Nimble matcher API style.
 
-### RxNibmle 4.5.0:
+### RxNimble 4.5.0:
 ```swift
 expect(o).to(equalFirst(...))
 ```
-### RxNibmle 5.0.0:
+### RxNimble 5.0.0:
 ```swift
 expect(o).first.to(equal(...))
 ```
