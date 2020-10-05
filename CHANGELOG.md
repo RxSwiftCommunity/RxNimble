@@ -2,7 +2,7 @@
 
 ## Current Master
 
-- Nothing yet!
+- Support for new Nimble 9 dependency. See [#59](https://github.com/RxSwiftCommunity/RxNimble/pull/59).
 
 ## 4.7.2
 
