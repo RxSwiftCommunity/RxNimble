@@ -1,4 +1,4 @@
-osx_image: xcode10.2
+osx_image: xcode11.4
 language: objective-c
 xcode_project: RxNimble.xcodeproj
 xcode_scheme:
