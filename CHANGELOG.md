@@ -2,7 +2,12 @@
 
 ## Current Master
 
+- Nothing yet!
+
+## 5.0.0
+
 - Support for new Nimble 9 dependency. See [#59](https://github.com/RxSwiftCommunity/RxNimble/pull/59).
+- Increased minimum iOS deployment target to 9.0.
 
 ## 4.7.2
 
