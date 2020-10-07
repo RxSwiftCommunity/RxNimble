@@ -30,9 +30,9 @@ public func throwError<T: Equatable>() -> Predicate<RecordedEvents<T>> {
         }
 
         if let actualError = actualError {
-            return PredicateResult(bool: true, message: .expectedCustomValueTo("throw any error", "<\(actualError)>"))
+            return PredicateResult(bool: true, message: .expectedCustomValueTo("throw any error", actual: "<\(actualError)>"))
         } else {
-            return PredicateResult(bool: false, message: .expectedCustomValueTo("throw any error", "no error"))
+            return PredicateResult(bool: false, message: .expectedCustomValueTo("throw any error", actual: "no error"))
         }
     }
 }
