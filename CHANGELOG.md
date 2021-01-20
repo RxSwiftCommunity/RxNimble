@@ -4,6 +4,11 @@
 
 - Nothing yet!
 
+## 5.1.0
+
+- Support [RxSwift 6](https://dev.to/freak4pc/what-s-new-in-rxswift-6-2nog)
+- Adds a [carthage.sh](https://github.com/Carthage/Carthage/issues/3019#issuecomment-665136323) script to workaround a Carthage issue
+
 ## 5.0.0
 
 - Support for new Nimble 9 dependency. See [#59](https://github.com/RxSwiftCommunity/RxNimble/pull/59).
