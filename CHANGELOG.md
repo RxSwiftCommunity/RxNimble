@@ -4,6 +4,10 @@
 
 - Nothing yet!
 
+## 5.1.1
+
+- Updates minimum deployment targets to iOS 9 and macOS 10.12.
+
 ## 5.1.0
 
 - Support [RxSwift 6](https://dev.to/freak4pc/what-s-new-in-rxswift-6-2nog)
