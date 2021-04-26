@@ -10,10 +10,6 @@ cache:
     - $HOME/Library/Caches/org.carthage.CarthageKit/dependencies
     - Carthage
 
-before_install:
-  - carthageversion=$(carthage version)
-  - if [ $carthageversion != "0.33.0" ]; then brew uninstall carthage; HOMEBREW_NO_AUTO_UPDATE=1 brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/d453dd956dbfc5b724b0fdaeb14f9480f461479d/Formula/carthage.rb; fi
-
 jobs:
   include:
     - stage: prepare carthage cache
