@@ -4,6 +4,10 @@
 
 - Nothing yet!
 
+## 5.1.2
+
+- Updates Nimble version (see [#65](https://github.com/RxSwiftCommunity/RxNimble/pull/65)).
+
 ## 5.1.1
 
 - Updates minimum deployment targets to iOS 9 and macOS 10.12.
