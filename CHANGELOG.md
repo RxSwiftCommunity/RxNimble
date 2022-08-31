@@ -4,6 +4,10 @@
 
 - Nothing yet!
 
+## 6.0.0
+
+- Support for new Nimble 10 dependency. See [#66](https://github.com/RxSwiftCommunity/RxNimble/pull/66).
+
 ## 5.1.2
 
 - Updates Nimble version (see [#65](https://github.com/RxSwiftCommunity/RxNimble/pull/65)).
