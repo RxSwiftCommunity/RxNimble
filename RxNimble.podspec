@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Source/Core/"
-    ss.dependency "Nimble", "~> 10.0"
+    ss.dependency "Nimble", "~> 11.0"
     ss.dependency "RxSwift", "~> 6.0"
   end
 

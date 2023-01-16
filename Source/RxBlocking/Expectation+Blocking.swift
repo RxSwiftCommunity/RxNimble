@@ -11,7 +11,7 @@ import Nimble
 import RxSwift
 import RxBlocking
 
-public extension Expectation where T: ObservableConvertibleType {
+public extension SyncExpectation where Value: ObservableConvertibleType {
 
     // MARK: - first
 
@@ -19,7 +19,7 @@ public extension Expectation where T: ObservableConvertibleType {
     ///
     /// Transforms the expression by blocking sequence and returns its first element.
     /// - parameter timeout: Maximal time interval waiting for first element to emit before throwing error
-    func first(timeout: TimeInterval? = nil) -> Expectation<T.Element> {
+    func first(timeout: TimeInterval? = nil) -> SyncExpectation<Value.Element> {
         return transform { source in
             try source?.toBlocking(timeout: timeout).first()
         }
@@ -28,7 +28,7 @@ public extension Expectation where T: ObservableConvertibleType {
     /// Expectation with sequence's first element
     ///
     /// Transforms the expression by blocking sequence and returns its first element.
-    var first: Expectation<T.Element> {
+    var first: SyncExpectation<Value.Element> {
         return first()
     }
 
@@ -38,7 +38,7 @@ public extension Expectation where T: ObservableConvertibleType {
     ///
     /// Transforms the expression by blocking sequence and returns its last element.
     /// - parameter timeout: Maximal time interval waiting for sequence to complete before throwing error
-    func last(timeout: TimeInterval? = nil) -> Expectation<T.Element> {
+    func last(timeout: TimeInterval? = nil) -> SyncExpectation<Value.Element> {
         return transform { source in
             try source?.toBlocking(timeout: timeout).last()
         }
@@ -47,7 +47,7 @@ public extension Expectation where T: ObservableConvertibleType {
     /// Expectation with sequence's last element
     ///
     /// Transforms the expression by blocking sequence and returns its last element.
-    var last: Expectation<T.Element> {
+    var last: SyncExpectation<Value.Element> {
         return last()
     }
 
@@ -57,7 +57,7 @@ public extension Expectation where T: ObservableConvertibleType {
     ///
     /// Transforms the expression by blocking sequence and returns its elements.
     /// - parameter timeout: Maximal time interval waiting for sequence to complete before throwing error
-    func array(timeout: TimeInterval? = nil) -> Expectation<[T.Element]> {
+    func array(timeout: TimeInterval? = nil) -> SyncExpectation<[Value.Element]> {
         return transform { source in
             try source?.toBlocking(timeout: timeout).toArray()
         }
@@ -66,7 +66,7 @@ public extension Expectation where T: ObservableConvertibleType {
     /// Expectation with all sequence's elements
     ///
     /// Transforms the expression by blocking sequence and returns its elements.
-    var array: Expectation<[T.Element]> {
+    var array: SyncExpectation<[Value.Element]> {
         return array()
     }
 }
