@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CwlCatchException",
+        "repositoryURL": "https://github.com/mattgallagher/CwlCatchException.git",
+        "state": {
+          "branch": null,
+          "revision": "35f9e770f54ce62dd8526470f14c6e137cef3eea",
+          "version": "2.1.1"
+        }
+      },
+      {
+        "package": "CwlPreconditionTesting",
+        "repositoryURL": "https://github.com/mattgallagher/CwlPreconditionTesting.git",
+        "state": {
+          "branch": null,
+          "revision": "c21f7bab5ca8eee0a9998bbd17ca1d0eb45d4688",
+          "version": "2.1.0"
+        }
+      },
+      {
+        "package": "Nimble",
+        "repositoryURL": "https://github.com/Quick/Nimble",
+        "state": {
+          "branch": null,
+          "revision": "b7f6c49acdb247e3158198c5448b38c3cc595533",
+          "version": "11.2.1"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift",
+        "state": {
+          "branch": null,
+          "revision": "b4307ba0b6425c0ba4178e138799946c3da594f8",
+          "version": "6.5.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
