@@ -4,7 +4,7 @@ import RxTest
 
 public typealias RecordedEvents<E> = [Recorded<Event<E>>]
 
-public extension Expectation where T: ObservableConvertibleType {
+public extension SyncExpectation where Value: ObservableConvertibleType {
     /// Make an expectation on the events emitted by an observable.
     ///
     /// - Parameters:
@@ -14,9 +14,9 @@ public extension Expectation where T: ObservableConvertibleType {
     /// - Returns: an expectation of the actual events emitted by the observable.
     func events(scheduler: TestScheduler,
                 disposeBag: DisposeBag,
-                startAt initialTime: Int = 0) -> Expectation<RecordedEvents<T.Element>> {
+                startAt initialTime: Int = 0) -> SyncExpectation<RecordedEvents<Value.Element>> {
         return transform { source in
-            let results = scheduler.createObserver(T.Element.self)
+            let results = scheduler.createObserver(Value.Element.self)
 
             scheduler.scheduleAt(initialTime) {
                 source?.asObservable().subscribe(results).disposed(by: disposeBag)
