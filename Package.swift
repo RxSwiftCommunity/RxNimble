@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "RxNimble",
     platforms: [
-        .iOS(.v13), .tvOS(.v11), .watchOS(.v4), .macOS(.v10_15)
+        .iOS(.v13), .tvOS(.v13), .watchOS(.v6), .macOS(.v10_15)
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/ReactiveX/RxSwift", .upToNextMajor(from: "6.0.0")),
-        .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "11.0.0")),
+        .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "12.0.0")),
         .package(url: "https://github.com/Quick/Quick", .upToNextMajor(from: "6.1.0")),
     ],
     targets: [
