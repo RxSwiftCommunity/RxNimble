@@ -1,8 +1,9 @@
+import Foundation
 import Quick
 import Nimble
 import RxSwift
 import RxTest
-import RxNimbleRxTest
+import RxNimble
 
 class RxNimbleRxTestTests: QuickSpec {
     override func spec() {
