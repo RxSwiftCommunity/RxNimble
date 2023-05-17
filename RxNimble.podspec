@@ -19,19 +19,19 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "Source/Core/"
+    ss.source_files  = "Sources/RxNimble/Core/"
     ss.dependency "Nimble", "~> 12.0"
     ss.dependency "RxSwift", "~> 6.0"
   end
 
   s.subspec "RxBlocking" do |ss|
-    ss.source_files = "Source/RxBlocking/"
+    ss.source_files = "Sources/RxNimble/RxBlocking/"
     ss.dependency "RxNimble/Core"
     ss.dependency "RxBlocking"
   end
 
   s.subspec "RxTest" do |ss|
-    ss.source_files = "Source/RxTest/"
+    ss.source_files = "Sources/RxNimble/RxTest/"
     ss.dependency "RxNimble/Core"
     ss.dependency "RxTest"
   end

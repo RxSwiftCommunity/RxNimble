@@ -28,16 +28,14 @@ let package = Package(
                 "Nimble",
                 .product(name: "RxTest", package: "RxSwift"),
                 .product(name: "RxBlocking", package: "RxSwift")
-            ],
-            path: "Source/"
+            ]
         ),
         .testTarget(
             name: "RxNimbleTests",
             dependencies: [
                 "RxNimble",
                 "Quick",
-            ],
-            path: "RxNimbleTests/"
+            ]
         ),
     ],
     swiftLanguageVersions: [.v5]
