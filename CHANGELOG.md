@@ -2,7 +2,7 @@
 
 ## Current Master
 
-- Nothing yet!
+- Updates to Nimble 13. See [#69](https://github.com/RxSwiftCommunity/RxNimble/issues/69).
 
 ## 6.1.0
 
