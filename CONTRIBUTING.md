@@ -1,9 +1,7 @@
 ## Preparing for development
 
-1. Make sure you have [Carthage](https://github.com/Carthage/Carthage) installed. We use it to pull the RxNimble dependency for development.
-2. Check out this repository.
-3. Do a `carthage update --platform ios --no-use-binaries`
-4. Open `RxNimble.xcodeproj` and start hacking!
+1. Check out this repository.
+2. Open `Package.swift` and start hacking!
 
 ## Submitting a Pull Request
 

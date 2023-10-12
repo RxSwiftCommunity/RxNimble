@@ -2,7 +2,10 @@
 
 ## Current Master
 
-- Nothing yet!
+- Support for new Nimble 12 dependency. See [#68](https://github.com/RxSwiftCommunity/RxNimble/pull/68).
+- Remove Carthage dependency and build steps
+- Move to Swift Package Manager instead of xcodeproj
+- Reorganized file structure to SPM standard
 
 ## 6.1.0
 

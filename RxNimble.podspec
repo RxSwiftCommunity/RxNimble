@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "RxSwiftCommunity" => "https://github.com/RxSwiftCommunity" }
 
-  s.ios.deployment_target = "9.0"
-  s.osx.deployment_target = "10.12"
-  s.tvos.deployment_target = "9.0"
+  s.ios.deployment_target = "13.0"
+  s.osx.deployment_target = "10.15"
+  s.tvos.deployment_target = "13.0"
   s.source       = { :git => "https://github.com/RxSwiftCommunity/RxNimble.git", :tag => s.version }
   s.default_subspec = "RxBlocking"
   s.frameworks = "Foundation", "XCTest"
@@ -19,19 +19,19 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
 
   s.subspec "Core" do |ss|
-    ss.source_files  = "Source/Core/"
-    ss.dependency "Nimble", "~> 11.0"
+    ss.source_files  = "Sources/RxNimble/Core/"
+    ss.dependency "Nimble", "~> 12.0"
     ss.dependency "RxSwift", "~> 6.0"
   end
 
   s.subspec "RxBlocking" do |ss|
-    ss.source_files = "Source/RxBlocking/"
+    ss.source_files = "Sources/RxNimble/RxBlocking/"
     ss.dependency "RxNimble/Core"
     ss.dependency "RxBlocking"
   end
 
   s.subspec "RxTest" do |ss|
-    ss.source_files = "Source/RxTest/"
+    ss.source_files = "Sources/RxNimble/RxTest/"
     ss.dependency "RxNimble/Core"
     ss.dependency "RxTest"
   end
