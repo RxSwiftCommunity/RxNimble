@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RxNimble"
-  s.version      = "6.3.0"
+  s.version      = "6.3.1"
   s.summary      = "Nimble extensions that making unit testing with RxSwift easier 🎉"
   s.description  = <<-DESC
     This library includes functions that make testing RxSwift projects easier with Nimble.
