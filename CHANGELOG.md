@@ -2,7 +2,7 @@
 
 ## Current Master
 
-- Nothing yet.
+- Rename `Predicate` to `Matcher` to support Xcode 15.
 
 ## 6.3.0
 

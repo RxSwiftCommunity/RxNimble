@@ -4,7 +4,7 @@ import RxTest
 
 /// A Nimble matcher that succeeds when the actual events emit an error
 /// of any type.
-public func throwError<T: Equatable>() -> Predicate<RecordedEvents<T>> {
+public func throwError<T: Equatable>() -> Matcher<RecordedEvents<T>> {
     func extractError(_ recorded: RecordedEvents<T>?) -> [Error]? {
         func extractError<E>(_ recorded: Recorded<Event<E>>) -> Error? {
             return recorded.value.error
@@ -18,7 +18,7 @@ public func throwError<T: Equatable>() -> Predicate<RecordedEvents<T>> {
     }
 
 
-    return Predicate { actualEvents in
+    return Matcher { actualEvents in
         var actualError: Error?
         do {
             let recordedEvents = try actualEvents.evaluate()
@@ -30,9 +30,9 @@ public func throwError<T: Equatable>() -> Predicate<RecordedEvents<T>> {
         }
 
         if let actualError = actualError {
-            return PredicateResult(bool: true, message: .expectedCustomValueTo("throw any error", actual: "<\(actualError)>"))
+            return MatcherResult(bool: true, message: .expectedCustomValueTo("throw any error", actual: "<\(actualError)>"))
         } else {
-            return PredicateResult(bool: false, message: .expectedCustomValueTo("throw any error", actual: "no error"))
+            return MatcherResult(bool: false, message: .expectedCustomValueTo("throw any error", actual: "no error"))
         }
     }
 }

@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/ReactiveX/RxSwift", .upToNextMajor(from: "6.0.0")),
-        .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "12.0.0")),
+        .package(url: "https://github.com/Quick/Nimble", .upToNextMajor(from: "13.0.0")),
         .package(url: "https://github.com/Quick/Quick", .upToNextMajor(from: "6.1.0")),
     ],
     targets: [
